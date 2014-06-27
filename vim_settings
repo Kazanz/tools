@@ -1,0 +1,51 @@
+execute pathogen#infect() 
+syntax on 
+filetype plugin indent on 
+ 
+set smartindent 
+set tabstop=4 
+set shiftwidth=4 
+set expandtab 
+ 
+"Pathogen 
+execute pathogen#infect() 
+call pathogen#helptags() 
+syntax on 
+filetype plugin indent on 
+ 
+set t_Co=256 
+ 
+syntax enable 
+let g:solarized_termcolors=256 
+set background=dark 
+colorscheme solarized 
+ 
+if has('gui_running') 
+        set background=light 
+    else 
+            set background=dark 
+        endif 
+ 
+set nofoldenable 
+ 
+" clipboard fusion! 
+set clipboard^=unnamed clipboard^=unnamedplus 
+ 
+ 
+let g:pymode_rope_complete_on_dot = 0 
+ 
+ 
+set hlsearch 
+set showmatch 
+set ignorecase 
+set smarttab 
+set nowrap 
+set autoindent 
+ 
+set history=1000 
+set undolevels=1000 
+set wildignore=*.swp,*.pyc 
+set title 
+ 
+set nobackup 
+set noswapfile
